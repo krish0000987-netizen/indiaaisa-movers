@@ -76,7 +76,7 @@ export default function Tracking() {
             </div>
             <div className="rounded-2xl overflow-hidden border border-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/company/page_08.jpg" alt="Tracking support" className="w-full h-[180px] object-cover" />
+              <img src="/company/page_00.jpg" alt="Tracking support" className="w-full h-[180px] object-cover" />
             </div>
           </div>
         </div>

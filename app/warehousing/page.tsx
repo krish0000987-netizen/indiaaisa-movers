@@ -60,7 +60,7 @@ export default function Warehousing() {
             </div>
             <div className="mt-4 rounded-2xl overflow-hidden border border-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/company/page_08.jpg" alt="warehousing transport" className="w-full h-[220px] object-cover" />
+              <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop" alt="warehousing transport" className="w-full h-[220px] object-cover" />
             </div>
           </div>
         </div>

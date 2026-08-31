@@ -6,25 +6,25 @@ type Slide = { image: string; title: string; subtitle: string; cta: string };
 
 const slides: Slide[] = [
   {
-    image: "/company/page_08.jpg",
+    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop",
     title: "Moving Business Forward.",
     subtitle: "Reliable Transport & Logistics Solutions Built Around Your Business.",
     cta: "Get a Quote",
   },
   {
-    image: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
     title: "Cargo Handled With Confidence.",
     subtitle: "From heavy machinery to commercial cargo — coordinated with care.",
     cta: "Explore Services",
   },
   {
-    image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+    image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=2070&auto=format&fit=crop",
     title: "Smarter Logistics. Better Distribution.",
     subtitle: "Warehousing & distribution support that keeps your supply chain moving.",
     cta: "Our Warehousing",
   },
   {
-    image: "/company/page_00.jpg",
+    image: "https://images.unsplash.com/photo-1519003722824-194243704534?q=80&w=2070&auto=format&fit=crop",
     title: "Reliable Transportation. Every Mile.",
     subtitle: "Dedicated vehicles, professional handling and timely coordination.",
     cta: "Full Truck Load",

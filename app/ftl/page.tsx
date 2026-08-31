@@ -64,7 +64,7 @@ export default function FTL() {
             </div>
             <div className="mt-4 rounded-2xl overflow-hidden border border-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/company/page_08.jpg" alt="FTL operations" className="w-full h-[220px] object-cover" />
+              <img src="/company/page_00.jpg" alt="FTL operations" className="w-full h-[220px] object-cover" />
             </div>
           </div>
         </div>

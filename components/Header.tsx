@@ -47,39 +47,39 @@ export default function Header({ onQuote }: { onQuote: () => void }) {
         </div>
       </div>
 
-      <header className={`sticky top-0 z-50 bg-white border-b transition-all ${scrolled ? "shadow-[0_8px_30px_rgba(0,0,0,0.08)] border-slate-200" : "border-slate-100"} `}>
-        <div className={`max-w-[1420px] mx-auto px-4 lg:px-6 flex items-center justify-between transition-all ${scrolled ? "h-[68px]" : "h-[78px]"}`}>
-          <Link href="/" className="flex items-center gap-3 shrink-0">
-            <div className="relative h-[44px] w-[190px] lg:h-[48px] lg:w-[210px]">
-              <Image src="/logo.jpeg" alt="Indo Asia Cargo Movers" fill className="object-contain object-left" priority />
+      <header className={`sticky top-0 z-50 bg-white border-b transition-all overflow-x-clip ${scrolled ? "shadow-[0_8px_30px_rgba(0,0,0,0.08)] border-slate-200" : "border-slate-100"} `}>
+        <div className={`max-w-[1420px] mx-auto px-3 sm:px-4 lg:px-6 flex items-center justify-between gap-2 transition-all ${scrolled ? "h-[62px] sm:h-[68px]" : "h-[68px] sm:h-[78px]"}`}>
+          <Link href="/" className="flex items-center gap-2 shrink-0 min-w-0">
+            <div className="relative h-[36px] w-[150px] sm:h-[40px] sm:w-[170px] lg:h-[46px] lg:w-[200px] shrink-0">
+              <Image src="/logo.jpeg" alt="Indo Asia Cargo Movers" fill className="object-contain object-left" priority sizes="(max-width:640px) 150px, 200px" />
             </div>
           </Link>
 
-          <nav className="hidden xl:flex items-center gap-1">
+          <nav className="hidden xl:flex items-center gap-0.5 shrink-0">
             {nav.map((n) => {
               const active = pathname === n.href;
               return (
-                <Link key={n.href} href={n.href} className={`px-3 py-2 text-[13px] font-semibold tracking-wide uppercase rounded-md transition ${active ? "text-[#DC2626] bg-red-50" : "text-slate-700 hover:text-[#0A1931] hover:bg-slate-50"}`}>
+                <Link key={n.href} href={n.href} className={`px-2.5 py-2 text-[12px] font-bold tracking-wide uppercase rounded-md transition whitespace-nowrap ${active ? "text-[#DC2626] bg-red-50" : "text-slate-700 hover:text-[#0A1931] hover:bg-slate-50"}`}>
                   {n.label}
                 </Link>
               );
             })}
           </nav>
 
-          <div className="flex items-center gap-2 lg:gap-3">
-            <a href="tel:+919000070930" className="hidden lg:inline-flex items-center gap-2 text-[13px] font-bold text-[#0A1931] border border-slate-200 px-4 py-2.5 rounded-full hover:bg-slate-50">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5 12.91 19.79 19.79 0 0 1 1.93 4.28 2 2 0 0 1 3.91 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.03 12.03 0 0 0 2.81.57A2 2 0 0 1 22 16.92z" /></svg>
-              90000 70930
+          <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+            <a href="tel:+919000070930" className="hidden lg:inline-flex items-center gap-1.5 text-[12px] sm:text-[13px] font-bold text-[#0A1931] border border-slate-200 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full hover:bg-slate-50 whitespace-nowrap">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 5 12.91 19.79 19.79 0 0 1 1.93 4.28 2 2 0 0 1 3.91 2h3a2 2 0 0 1 2 1.72 12.05 12.05 0 0 0 .57 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.03 12.03 0 0 0 2.81.57A2 2 0 0 1 22 16.92z" /></svg>
+              <span className="hidden sm:inline">90000 70930</span><span className="sm:hidden">Call</span>
             </a>
-            <button onClick={onQuote} className="inline-flex items-center gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-[13px] font-bold px-5 lg:px-6 py-2.5 lg:py-3 rounded-full transition shadow-[0_6px_20px_rgba(220,38,38,0.3)]">
-              Get a Quote
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
+            <button onClick={onQuote} className="inline-flex items-center gap-1 sm:gap-2 bg-[#DC2626] hover:bg-[#B91C1C] text-white text-[12px] sm:text-[13px] font-bold px-3 sm:px-5 lg:px-6 py-2.5 sm:py-3 rounded-full transition shadow-[0_6px_20px_rgba(220,38,38,0.3)] whitespace-nowrap">
+              <span className="hidden sm:inline">Get a Quote</span><span className="sm:hidden">Quote</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.3" className="hidden sm:block"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </button>
-            <button onClick={() => setOpen(!open)} className="xl:hidden w-11 h-11 inline-flex items-center justify-center rounded-full border border-slate-200 bg-white ml-1">
+            <button onClick={() => setOpen(!open)} aria-label="Menu" className="xl:hidden w-10 h-10 sm:w-11 sm:h-11 inline-flex items-center justify-center rounded-full border border-slate-200 bg-white ml-0.5 shrink-0">
               {open ? (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
               ) : (
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18" /></svg>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 12h18M3 6h18M3 18h18" /></svg>
               )}
             </button>
           </div>

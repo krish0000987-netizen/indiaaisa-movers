@@ -35,7 +35,7 @@ export default function About() {
           <div className="lg:col-span-5">
             <div className="rounded-[24px] overflow-hidden border border-slate-100">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/company/page_08.jpg" alt="Fleet operations" className="w-full h-[300px] object-cover" />
+              <img src="/company/page_00.jpg" alt="Fleet operations" className="w-full h-[300px] object-cover" />
               <div className="p-5">
                 <div className="font-bold text-[#0A1931]">Real vehicles. Real loads.</div>
                 <p className="text-sm text-slate-500 mt-2 leading-6">Images on this website include actual company operations — heavy and ODC cargo handled with on-ground coordination.</p>

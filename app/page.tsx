@@ -71,9 +71,9 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { title: "Full Truck Load (FTL)", desc: "Dedicated vehicle capacity for large or time-sensitive shipments.", img: "/company/page_08.jpg", href: "/ftl" },
+              { title: "Full Truck Load (FTL)", desc: "Dedicated vehicle capacity for large or time-sensitive shipments.", img: "/company/page_00.jpg", href: "/ftl" },
               { title: "Part Truck Load (PTL)", desc: "Economical sharing of vehicle capacity for medium loads.", img: "/company/page_02.jpg", href: "/ptl-cargo" },
-              { title: "Cargo Transportation", desc: "Professional movement of commercial cargo with secure handling.", img: "/company/page_05.jpg", href: "/ptl-cargo" },
+              { title: "Cargo Transportation", desc: "Professional movement of commercial cargo with secure handling.", img: "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?q=80&w=800&auto=format&fit=crop", href: "/ptl-cargo" },
               { title: "Warehousing Support", desc: "Storage & logistics coordination via partner facilities where needed.", img: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=800&auto=format&fit=crop", href: "/warehousing" },
               { title: "Distribution", desc: "Moving goods from storage or origin toward business destinations.", img: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=800&auto=format&fit=crop", href: "/warehousing" },
               { title: "Customized Logistics", desc: "Tailored solutions planned around your route, volume & timeline.", img: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=800&auto=format&fit=crop", href: "/services" },

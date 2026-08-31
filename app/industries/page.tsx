@@ -12,7 +12,7 @@ const industries = [
   { title: "Electronics", desc: "Careful handling and transportation planning for sensitive commercial loads.", img: "https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=700&auto=format&fit=crop" },
   { title: "Pharmaceuticals*", desc: "General logistics support — any specialized compliance per shipper’s requirements.", img: "https://images.unsplash.com/photo-1587370560942-ad2a04eabb6d?q=80&w=700&auto=format&fit=crop" },
   { title: "Construction", desc: "Movement of construction-related materials and equipment.", img: "/company/page_00.jpg" },
-  { title: "Industrial Equipment", desc: "Support for machinery, ODC and heavy equipment — as seen in our operations.", img: "/company/page_08.jpg" },
+  { title: "Industrial Equipment", desc: "Support for machinery, ODC and heavy equipment — as seen in our operations.", img: "/company/page_00.jpg" },
 ];
 
 export default function Industries() {
